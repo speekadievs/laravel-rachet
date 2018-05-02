@@ -1,0 +1,27 @@
+{
+  "name": "speekadievs/laravel-ratchet",
+  "description": "A Ratchet WebSocket Server built for Laravel, with user authentication and routing",
+  "keywords": [
+    "laravel"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": ">=7.1.0",
+    "cboden/ratchet": "^0.4",
+    "illuminate/console": "^5.5",
+    "illuminate/support": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "SpeekaDievs\\LaravelRatchet\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SpeekaDievs\\LaravelRatchet\\Providers\\LaravelRatchetServiceProvider"
+      ]
+    }
+  }
+}
